@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ténéré Club RS</title>
+    <link rel="icon" href="../imagens/tenere.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>Enviando E-mail com PHP - DevMedia</title>
+</head>
+
+<body>
+    <header>
+        <!--Definindo a classe do navbar-->
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!--Titulo do navbar-->
+                <a class="navbar-brand" href="https://fit.faccat.br/~a1150380/TenereClubRS"><img src="../imagens/logo1.png" height="60" width="120"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <!-- Calsse que sera usada nos itens do navbar -->
+                    <ul class="navbar-nav mr-auto">
+                        <!--itens da lista-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://fit.faccat.br/~a1150380/TenereClubRS">Início</a>
+                            <li class="nav-item">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/sobre.html">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/fotos.html">Fotos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../paginas/Contato.html">Contato</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link Dropdown-toglle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="https://www.facebook.com/tenereclubrs/">Facebook</a>
+                                        <a class="dropdown-item" href="https://www.instagram.com/tenereclubrs">Instagram</a>
+                                        <a class="dropdown-item" href="https://www.youtube.com/channel/UC1U4uiQQboMa-Nxn30U-tdw">YouTube</a>
+                                    </div>
+                                </li>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="contato_form">
+            <form action="enviar.php" name="form_contato" method="post">
+                <p class="titulo">Formulário</p>
+                <table align="center">
+                    <tr>
+                        <td>Nome:</td>
+                        <td>
+                            <input type="text" name="nome" maxlength="40" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <input type="email" name="email" maxlength="30" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td>
+                            <input type="text" name="telefone" maxlength="14" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Opções:</sup>
+                        </td>
+                        <td>
+                            <select name="escolhas" class="campo_input">
+                              <option value="Opção 1">Opção 1</option>
+                              <option value="Opção 2">Opção 2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mensagem:</sup>
+                        </td>
+                        <td>
+                            <textarea name="msg" cols="16" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr align="right" ;>
+                        <td colspan="2">
+                            <input type="reset" class="campo_submit" value="Limpar" />
+                            <input type="submit" class="campo_submit" value="Enviar" />
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www2.faccat.br/portal/"><img src="../imagens/faccat.png" height="50" align="left"></a>
+            <a href="https://fit.faccat.br/ead/"><img src="../imagens/ti_faccat.jpg" height="50" align="right"></a>
+            <a href="https://fit.faccat.br/~fpereira/pagina/autoria/"> Autoria e design para Internet I </a> Prof:Flávia Carvalho
+        </div> <br>
+        <div>Desenvolvido por <a href="https://www.facebook.com/regis.erthal">Régis Erthal</a> 27/11/2018</div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="https://mdbootstrap.com/previews/docs/latest/js/bootstrap.min.js"></script>
+    <script src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script>
+    <script src="https://mdbootstrap.com/previews/docs/latest/js/jarallax.js"></script>
+    <script src="https://mdbootstrap.com/previews/docs/latest/js/jarallax-video.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

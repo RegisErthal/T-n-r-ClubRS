@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: rgb(46, 42, 42);
+    color: whitesmoke;
+    font-family: sans-serifa;
+    font-size: 13px;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 25 px;
+}
+
+.d-block {
+    background-color: black;
+    margin: 0 auto;
+    width: 80%;
+}
+
+<style type="text/css">#contato_form {
+    width: 500px;
+    min-height: 175px;
+    color: #999;
+    margin: auto;
+}
+
+</style> // Compo E-mail
+$arquivo="
+ <style type='text/css'>body {
+    margin: 0px;
+    font-family: Verdane;
+    font-size: 12px;
+    color: #666666;
+}
+
+</style><html><table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'><tr><td><tr><td width='500'>Nome:$nome</td></tr><tr><td width='320'>E-mail:<b>$email</b></td></tr><tr><td width='320'>Telefone:<b>$telefone</b></td></tr><tr><td width='320'>Opções:$escolhas</td></tr><tr><td width='320'>Mensagem:$nome</td></tr></td></tr><tr><td>Este e-mail foi enviado em <b>$data_envio</b>às <b>$hora_envio</b></td></tr></table></html>";
